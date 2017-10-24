@@ -1,5 +1,5 @@
 {
-  "name": "pay-hub.cn/sdk",
+  "name": "pay-hub.cn/payhub-php",
   "description": "pay-hub RESTful API FOR PHP",
   "keywords" : ["pay-hub","RESTFul API"],
   "type": "library",
