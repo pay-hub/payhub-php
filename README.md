@@ -16,10 +16,10 @@
 
 ## 发起支付订单
 ```
-    \Payhub\Payhub::registerApp(array $data)
+    \Payhub\Payhub::pay(array $data)
 ```
 ## 查询订单
 ```
-    \Payhub\Payhub::registerApp(array $data)
+    \Payhub\Payhub::query(array $data)
 ```
 
