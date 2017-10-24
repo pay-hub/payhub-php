@@ -39,6 +39,9 @@ class Payhub
 	 */
 	static public function pay(array $data)
 	{
+		if (empty(self::$app_id) || empty(self::$app_secret)) {
+			throw new \Exception(Config::VALID_APP_INIT);
+		}
 		$curl = new Curl();
 		$res = $curl->post(Config::API_URL . '/api/pay', $data);
 		return json_decode($res->response);
@@ -51,6 +54,9 @@ class Payhub
 	 */
 	static public function query(array $data)
 	{
+		if (empty(self::$app_id) || empty(self::$app_secret)) {
+			throw new \Exception(Config::VALID_APP_INIT);
+		}
 		$curl = new Curl();
 		$res = $curl->post(Config::API_URL . '/api/query', $data);
 		return json_decode($res->response);
