@@ -1,0 +1,21 @@
+{
+  "name": "pay-hub.cn/sdk",
+  "description": "pay-hub RESTful API FOR PHP",
+  "keywords" : ["pay-hub","RESTFul API"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "luoxiaoxiang",
+      "email": "luoxiaoxiang.bj@gmail.com"
+    }
+  ],
+  "version" : "v1.0.0",
+  "homepage": "https://pay-hub.cn/",
+  "require": {
+    "php" : ">=5.3.2"
+  },
+  "autoload": {
+    "psr-4": { "pay-hub\\" : "sdk/src/"}
+  }
+}
