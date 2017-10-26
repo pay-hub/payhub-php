@@ -23,7 +23,7 @@ class Payhub
 	 * @param $app_secret payhub平台APP SECRET
 	 * @throws \Exception
 	 */
-	static function registerApp($app_id, $app_secret)
+	static public function registerApp($app_id, $app_secret)
 	{
 		if (empty($app_id) || empty($app_secret)) {
 			throw new \Exception(Config::VALID_BC_PARAM);
