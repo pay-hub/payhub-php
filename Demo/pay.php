@@ -13,7 +13,7 @@ if (empty($type)) {
 	die('参数type 不能为空');
 }
 $data['merchant_id'] = 2;//商户ID
-$data['app_id'] = 6;//应用ID
+$data['app_id'] = APP_ID;//应用ID
 $data['user_id'] = 6;//用户ID
 $data['pay_channel'] = $type;//渠道类型 ALI_PC,ALI_H5,ALI_APP,WX_PC,WX_H5,WX_APP,UN_PC,UN_H5,UN_APP
 $data['amount'] = 100;//订单金额 必须是正整数，单位为分

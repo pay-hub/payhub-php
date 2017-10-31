@@ -13,7 +13,7 @@
 	    die('参数order_no 不能为空');
     }
     $data = array();
-    $data['app_id'] = 6;//应用ID
+    $data['app_id'] = APP_ID;//应用ID
     $data['sign'] = md5(APP_ID . APP_SECRET);//签名 md5(app_id+ap_secret)
     $data["order_no"] = $order_no;//订单编号
     try {
